@@ -1,0 +1,228 @@
+.landtv-wrapper,
+.landtv-wrapper *,
+.landtv-wrapper *::before,
+.landtv-wrapper *::after {outline:none; box-sizing:border-box; font-family:Arial, sans-serif; font-weight:normal; letter-spacing:0}
+
+.landtv-wrapper {background:#FFFFFF; position:relative; overflow:hidden; width:100%; padding:26px 0 100px 0}
+
+@media (max-width:1219px) {
+    .landtv-wrapper {padding:13px 0 80px 0}
+}
+
+.landtv-container {margin:0 auto; max-width:1220px}
+
+@media (max-width:1219px) {
+    .landtv-container {padding:0 15px}
+}
+
+.landtv-welcome {position:relative; padding:113px 0; background:url(../img/landtv-welcome-bg.jpg) no-repeat center; background-size:cover}
+.landtv-welcome::before {content:""; position:absolute; left:0; top:0; bottom:0; right:50%; margin-right:-222px; background:linear-gradient(90deg, #000000 -9.36%, rgba(0, 0, 0, 0.76) 49.46%, rgba(0, 0, 0, 0) 100%)}
+.landtv-welcome .landtv-container {position:relative}
+.landtv-welcome-logo-grundig {width:166px}
+.landtv-welcome-logo-grundig img {display:block; width:100%}
+.landtv-welcome-award {position:absolute; right:0; top:-88px; width:109px}
+.landtv-welcome-award img {display:block; width:100%}
+.landtv-welcome-title {margin:40px 0 0 0; font-size:42px; line-height:55px; color:#FFFFFF}
+.landtv-welcome-model {margin:10px 0 0 0; width:391px}
+.landtv-welcome-model img {display:block; width:100%}
+.landtv-welcome-text {margin:40px 0 0 0; font-size:22px; line-height:29px; color:#FFFFFF}
+.landtv-welcome-links {margin:40px 0 0 0; display:flex}
+.landtv-welcome-links a {margin:0 0 0 20px; padding:14px 19px; border:1px solid #FFFFFF; border-radius:5px; font-size:16px; line-height:16px; color:#FFFFFF; text-decoration:none; transition:background 0.2s, color 0.2s}
+.landtv-welcome-links a:first-child {margin:0}
+.landtv-welcome-links a:hover {background:#FFFFFF; color:#001F39}
+
+@media (max-width:1219px) {
+    .landtv-welcome {padding:40px 0 273px 0; background:url(../img/landtv-welcome-bg-mobile.jpg) no-repeat center bottom}
+    .landtv-welcome::before {right:0; margin-right:0; background:linear-gradient(180deg, rgba(0, 0, 0, 0.9) 38.29%, rgba(0, 0, 0, 0) 74.07%)}
+    .landtv-welcome-logo-grundig {display:flex; width:auto; margin:0 114px 0 0; height:59px; align-items:center}
+    .landtv-welcome-logo-grundig img {max-width:166px}
+    .landtv-welcome-award {top:0; right:15px}
+    .landtv-welcome-title {font-size:24px; line-height:31px}
+    .landtv-welcome-model {width:auto; display:flex; justify-content:center}
+    .landtv-welcome-model img {max-width:345px}
+    .landtv-welcome-text {margin:20px 0 0 0; font-size:18px; line-height:23px}
+    .landtv-welcome-links {justify-content:space-between}
+    .landtv-welcome-links a {margin:0; padding:14px 0; min-width:calc(50% - 7.5px); max-width:calc(50% - 7.5px); text-align:center}
+}
+
+.landtv-immersion {padding:120px 0 621px 0; text-align:center; background:url(../img/landtv-immersion-bg.jpg) no-repeat center bottom; color:#001F39}
+.landtv-immersion-model {width:391px; margin:0 auto}
+.landtv-immersion-model img {display:block; width:100%}
+.landtv-immersion-title {margin:40px 0 0 0; font-size:48px; line-height:62px}
+.landtv-immersion-title span {font-style:italic}
+.landtv-immersion-text {margin:40px 0 0 0; font-size:20px; line-height:30px}
+
+@media (max-width:1219px) {
+    .landtv-immersion {padding:80px 0 317px 0; background-size:auto 264px}
+    .landtv-immersion-model {width:auto; display:flex; justify-content:space-between}
+    .landtv-immersion-model img {max-width:345px}
+    .landtv-immersion-title {margin:20px 0 0 0; font-size:30px; line-height:39px}
+    .landtv-immersion-text {margin:20px 0 0 0; font-size:18px; line-height:27px}
+}
+
+@media (max-width:374px) {
+    .landtv-immersion {background-size:auto 210px}
+}
+
+.landtv-quality {background:#000000; padding:120px 40px 40px 40px; text-align:center; color:#FFFFFF}
+.landtv-quality-title {font-size:48px; line-height:62px}
+.landtv-quality-title span {font-style:italic}
+.landtv-quality-text {margin:40px 0 0 0; font-size:20px; line-height:30px}
+.landtv-quality-text p {margin:20px 0 0 0; padding:0}
+.landtv-quality-text p:first-child {margin:0}
+.landtv-quality-tech {margin:60px 0 120px 0}
+.landtv-quality-tech img {display:block; width:100%}
+.landtv-quality-compare {margin:40px 0 0 0; position:relative}
+.landtv-quality-compare img {display:block; width:100%}
+.landtv-quality-compare::after {content:""; position:absolute; left:50%; top:0; bottom:0; width:1px; background:#FFFFFF}
+
+@media (max-width:1219px) {
+    .landtv-quality {padding:80px 0 20px 0}
+    .landtv-quality-title {font-size:30px; line-height:39px}
+    .landtv-quality-text {margin:20px 0 0 0; font-size:18px; line-height:27px}
+    .landtv-quality-tech {margin:40px 0 80px 0; display:flex; justify-content:center}
+    .landtv-quality-tech img {width:auto; height:246px}
+    .landtv-quality-compare {display:flex; justify-content:center}
+    .landtv-quality-compare img {width:auto; height:254px}
+}
+
+.landtv-sound {padding:120px 0 1017px 0; text-align:center; background:url(../img/landtv-sound-bg.jpg) no-repeat center bottom; color:#001F39}
+.landtv-sound-title {font-size:48px; line-height:62px}
+.landtv-sound-title span {font-style:italic}
+.landtv-sound-techs {margin:60px -20px 0 -20px; display:flex}
+.landtv-sound-tech {min-width:50%; max-width:50%; padding:0 20px}
+.landtv-sound-tech-logo img {display:block; height:40px; margin:0 auto}
+.landtv-sound-tech-text {margin:20px 0 0 0; font-size:20px; line-height:30px}
+
+@media (max-width:1219px) {
+    .landtv-sound {padding:80px 0 340px 0; background-image:url(../img/landtv-sound-bg-mobile.jpg)}
+    .landtv-sound-title {font-size:30px; line-height:39px}
+    .landtv-sound-techs {margin:40px 0 0 0; display:block}
+    .landtv-sound-tech {min-width:0; max-width:none; padding:0; margin:40px 0 0 0}
+    .landtv-sound-tech-text {font-size:18px; line-height:27px}
+}
+
+.landtv-award {margin:-51px 0 0 0; color:#001F39; position:relative; z-index:1}
+.landtv-award-logo {width:210px; margin:0 auto}
+.landtv-award-logo img {display:block; width:100%}
+.landtv-award-title {margin:60px 0 0 0; text-align:center; font-size:48px; line-height:62px}
+.landtv-award-title span {font-style:italic}
+.landtv-award-list {margin:60px 0 0 0}
+.landtv-award-item {display:flex; align-items:center; margin:60px 0 0 0; justify-content:space-between}
+.landtv-award-item-photo {min-width:716px; max-width:716px}
+.landtv-award-item:nth-child(even) .landtv-award-item-photo {order:1}
+.landtv-award-item-photo img {display:block; width:100%}
+.landtv-award-item-content {min-width:464px; max-width:464px}
+.landtv-award-item-title {font-size:36px; line-height:54px}
+.landtv-award-item-text {margin:20px 0 0 0; font-size:24px; line-height:36px}
+.landtv-award-photo {margin:60px 0 0 0}
+.landtv-award-photo img {display:block; width:100%}
+
+@media (max-width:1219px) {
+    .landtv-award {z-index:auto}
+    .landtv-award-title {margin:80px 0 0 0; font-size:30px; line-height:39px}
+    .landtv-award-list {margin:40px 0 0 0}
+    .landtv-award-item {display:block; margin:40px 0 0 0}
+    .landtv-award-item-photo {min-width:0; max-width:none}
+    .landtv-award-item-content {min-width:0; max-width:none; margin:20px 0 0 0}
+    .landtv-award-item-title {font-size:24px; line-height:36px}
+    .landtv-award-item-text {margin:10px 0 0 0; font-size:18px; line-height:27px}
+    .landtv-award-photo {margin:80px 0 0 0; display:flex; justify-content:center}
+    .landtv-award-photo img {width:auto; height:339px}
+}
+
+.landtv-gamer {margin:-343px 0 0 0; padding:483px 0 759px 0; background:#001526; color:#FFFFFF}
+.landtv-gamer-title {text-align:center; font-size:48px; line-height:62px; position:relative}
+.landtv-gamer-title span {font-style:italic}
+.landtv-gamer-title::after {content:""; position:absolute; right:-190px; top:-90px; width:300px; height:213px; background:url(../img/landtv-gamer-joystick.png) no-repeat; background-size:100%}
+.landtv-gamer-prefs {margin:41px -20px 0 -20px; display:flex}
+.landtv-gamer-pref {min-width:33.33%; max-width:33.33%; padding:0 20px}
+.landtv-gamer-pref-icon {width:35px}
+.landtv-gamer-pref-icon img {display:block; width:100%}
+.landtv-gamer-pref-text {margin:10px 0 0 0; font-size:24px; line-height:36px}
+
+@media (max-width:1219px) {
+    .landtv-gamer {margin:0; padding:100px 0 599px 0; position:relative}
+    .landtv-gamer-title {font-size:30px; line-height:39px}
+    .landtv-gamer-title::after {right:0; top:-140px; width:155px; height:110px}
+    .landtv-gamer-prefs {margin:40px 0 0 0; display:block}
+    .landtv-gamer-pref {min-width:0; max-width:none; padding:0; margin:40px 0 0 0}
+    .landtv-gamer-pref-text {font-size:18px; line-height:27px}
+}
+
+.landtv-google {position:relative; margin:-599px 0 0 0; padding:195px 0 0 0; height:1454px; color:#001F39; text-align:center}
+.landtv-google-circle-1 {position:absolute; left:50%; top:0; width:1454px; height:1454px; margin:0 0 0 -727px; background:#E8E7E2; border-radius:50%}
+.landtv-google-circle-2 {position:absolute; right:50%; top:0; width:786px; height:786px; margin:0 480px 0 0; background:#F8BB15; border-radius:50%}
+.landtv-google-circle-3 {position:absolute; left:50%; top:311px; width:812px; height:812px; margin:0 0 0 634px; background:#E94434; border-radius:50%}
+.landtv-google-circle-4 {position:absolute; left:50%; top:-20px; width:100px; height:100px; margin:0 0 0 510px; background:#32A852; border-radius:50%}
+.landtv-google-circle-5 {position:absolute; left:50%; top:727px; width:372px; height:372px; margin:0 0 0 177px; background:#547DBE; border-radius:50%}
+.landtv-google-joystick {position:absolute; left:50%; top:-340px; width:597px; margin:0 0 0 -562px}
+.landtv-google-joystick img {display:block; width:100%}
+.landtv-google .landtv-container {position:relative}
+.landtv-google-logo img {display:block; margin:0 auto}
+.landtv-google-text {margin:40px auto 0 auto; max-width:854px; font-size:20px; line-height:30px}
+.landtv-google-img {margin:40px 0 0 0}
+.landtv-google-img img {display:block; margin:0 auto}
+
+@media (max-width:1219px) {
+    .landtv-google {margin:-292px 0 0 0; padding:80px 0 0 0; height:842px}
+    .landtv-google-circle-1 {width:842px; height:842px; margin:0 0 0 -421px}
+    .landtv-google-circle-2 {left:15px; top:-109px; width:35px; height:35px; margin:0}
+    .landtv-google-circle-3 {display:none}
+    .landtv-google-circle-4 {top:-30px; margin:0 0 0 72.5px}
+    .landtv-google-circle-5 {width:114px; height:114px; top:338px; margin:0 0 0 117.5px}
+    .landtv-google-joystick {width:271px; top:-295px; margin:0 0 0 -135.5px}
+    .landtv-google-logo img {max-width:345px; width:100%}
+    .landtv-google-text {max-width:none; font-size:18px; line-height:27px}
+    .landtv-google-img img {max-width:345px; width:100%}
+}
+
+.landtv-video {position:relative; margin:-265px 0 0 0}
+.landtv-video-title {text-align:center; font-size:48px; line-height:62px; color:#001F39}
+.landtv-video-title span {font-style:italic; font-weight:bold}
+.landtv-video-player {margin:60px 0 0 0; padding:56.25% 0 0 0; position:relative}
+.landtv-video-player iframe,
+.landtv-video-player video {position:absolute; left:0; top:0; width:100%; height:100%; border:none}
+
+@media (max-width:1219px) {
+    .landtv-video {margin:-170px 0 0 0}
+    .landtv-video-title {font-size:30px; line-height:39px}
+    .landtv-video-player {margin:40px 0 0 0}
+}
+
+.landtv-products {margin:100px 0 0 0}
+.landtv-products-content {padding:0 38px; position:relative}
+.landtv-products-list,
+.landtv-products-list.swiper {margin:0}
+.landtv-products-list-inner {display:flex; position:relative}
+.landtv-products-list-item {min-width:25%; max-width:25%; padding:0 10px}
+.landtv-products-list-item-inner {background:#E7E6E1; border-radius:16px; padding:20px}
+.landtv-products-list-item-compare {display:flex; justify-content:flex-end}
+.landtv-products-list-item-compare a {width:20px; height:20px; background:url(../img/landtv-product-compare.png) no-repeat; opacity:0.2; transition:opacity 0.2s}
+.landtv-products-list-item-compare a:hover {opacity:1}
+.landtv-products-list-item-link {display:block; color:#BB442A; text-decoration:none; transition:color 0.2s}
+.landtv-products-list-item-link:hover {color:#001F39; text-decoration:none}
+.landtv-products-list-item-preview {height:250px; display:flex; align-items:center; justify-content:center}
+.landtv-products-list-item-preview img {display:block; max-width:100%; max-height:100%}
+.landtv-products-list-item-title {font-size:14px; line-height:18px; text-align:center}
+.landtv-products-list-item-buy {display:block; margin:20px 0 0 0; text-align:center; padding:15px; font-size:20px; line-height:20px; background:#BA4C33; border-radius:6px; color:#FFFFFF; text-decoration:none; transition:background 0.2s}
+.landtv-products-list-item-buy:hover {background:#001F39; text-decoration:none}
+.landtv-products-content .swiper-button-prev,
+.landtv-products-content .swiper-button-next {position:absolute; z-index:2; top:50%; width:48px; height:48px; border:none; border-radius:50%; margin:0; padding:0; outline:none; -webkit-appearance:none; cursor:pointer; background:transparent; transform:translateY(-50%); opacity:1}
+.landtv-products-content .swiper-button-prev::after,
+.landtv-products-content .swiper-button-next::after {display:none}
+.landtv-products-content .swiper-button-prev {left:0}
+.landtv-products-content .swiper-button-next {right:0}
+.landtv-products-content .swiper-button-prev svg,
+.landtv-products-content .swiper-button-next svg {display:block; width:48px; height:48px; fill:#BB442A; transition:fill 0.2s}
+.landtv-products-content .swiper-button-prev:hover svg,
+.landtv-products-content .swiper-button-next:hover svg {fill:#001F39}
+
+@media (max-width:1219px) {
+    .landtv-products {margin:40px 0 0 0}
+    .landtv-products-list-item {min-width:100%; max-width:100%; padding:0}
+    .landtv-products-content .swiper-button-prev,
+    .landtv-products-content .swiper-button-next {width:30px; height:30px}
+    .landtv-products-content .swiper-button-prev svg,
+    .landtv-products-content .swiper-button-next svg {width:30px; height:30px}
+}

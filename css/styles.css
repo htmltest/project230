@@ -72,9 +72,13 @@
 .landtv-quality-text p:first-child {margin:0}
 .landtv-quality-tech {margin:60px 0 120px 0}
 .landtv-quality-tech img {display:block; width:100%}
-.landtv-quality-compare {margin:40px 0 0 0; position:relative}
-.landtv-quality-compare img {display:block; width:100%}
-.landtv-quality-compare::after {content:""; position:absolute; left:50%; top:0; bottom:0; width:1px; background:#FFFFFF}
+.landtv-quality-compare {margin:40px 0 0 0; position:relative; user-select:none; height:600px; overflow:hidden; width:100%}
+.landtv-quality-compare-new {position:absolute; left:0; top:0; right:0; bottom:0; overflow:hidden}
+.landtv-quality-compare-old {position:absolute; left:0; top:0; bottom:0; width:50%; overflow:hidden}
+.landtv-quality-compare img {position:absolute; left:50vw; top:0; width:1840px; max-width:none; height:600px; margin-left:-920px}
+.landtv-quality-compare-sep {position:absolute; left:50%; top:0; bottom:0; width:1px; background:#FFFFFF; cursor:pointer}
+.landtv-quality-compare-sep::before {content:""; position:absolute; left:-10px; top:0; right:-10px; bottom:0; background:rgba(0, 0, 0, 0)}
+.landtv-quality-compare-sep::after {content:""; position:absolute; left:50%; top:50%; margin:-18px 0 0 -36px; width:72px; height:36px; background:url(../img/landtv-compare-cursor.svg) no-repeat}
 
 @media (max-width:1219px) {
     .landtv-quality {padding:80px 0 20px 0}
@@ -82,8 +86,8 @@
     .landtv-quality-text {margin:20px 0 0 0; font-size:18px; line-height:27px}
     .landtv-quality-tech {margin:40px 0 80px 0; display:flex; justify-content:center}
     .landtv-quality-tech img {width:auto; height:246px}
-    .landtv-quality-compare {display:flex; justify-content:center}
-    .landtv-quality-compare img {width:auto; height:254px}
+    .landtv-quality-compare {height:254px}
+    .landtv-quality-compare img {width:778px; height:254px; margin-left:-389px}
 }
 
 .landtv-sound {padding:120px 0 1017px 0; text-align:center; background:url(../img/landtv-sound-bg.jpg) no-repeat center bottom; color:#001F39}
@@ -191,22 +195,20 @@
 }
 
 .landtv-products {margin:100px 0 0 0}
-.landtv-products-content {padding:0 38px; position:relative}
+.landtv-products-content {position:relative}
 .landtv-products-list,
 .landtv-products-list.swiper {margin:0}
 .landtv-products-list-inner {display:flex; position:relative}
-.landtv-products-list-item {min-width:25%; max-width:25%; padding:0 10px}
+.landtv-products-list-item {min-width:50%; max-width:50%; padding:0 10px}
 .landtv-products-list-item-inner {background:#E7E6E1; border-radius:16px; padding:20px}
-.landtv-products-list-item-compare {display:flex; justify-content:flex-end}
-.landtv-products-list-item-compare a {width:20px; height:20px; background:url(../img/landtv-product-compare.png) no-repeat; opacity:0.2; transition:opacity 0.2s}
-.landtv-products-list-item-compare a:hover {opacity:1}
 .landtv-products-list-item-link {display:block; color:#BB442A; text-decoration:none; transition:color 0.2s}
 .landtv-products-list-item-link:hover {color:#001F39; text-decoration:none}
 .landtv-products-list-item-preview {height:250px; display:flex; align-items:center; justify-content:center}
 .landtv-products-list-item-preview img {display:block; max-width:100%; max-height:100%}
-.landtv-products-list-item-title {font-size:14px; line-height:18px; text-align:center}
-.landtv-products-list-item-buy {display:block; margin:20px 0 0 0; text-align:center; padding:15px; font-size:20px; line-height:20px; background:#BA4C33; border-radius:6px; color:#FFFFFF; text-decoration:none; transition:background 0.2s}
-.landtv-products-list-item-buy:hover {background:#001F39; text-decoration:none}
+.landtv-products-list-item-title {margin:10px 0 0 0; font-size:14px; line-height:18px; text-align:center}
+.landtv-products-list-item-detail {display:flex; margin:20px 0 0 0; justify-content:center}
+.landtv-products-list-item-detail span {text-align:center; padding:15px 36px; font-weight:normal; font-size:20px; line-height:20px; background:#BA4C33; border-radius:6px; color:#FFFFFF; text-decoration:none; transition:background 0.2s}
+.landtv-products-list-item-link:hover .landtv-products-list-item-detail span {background:#001F39; text-decoration:none}
 .landtv-products-content .swiper-button-prev,
 .landtv-products-content .swiper-button-next {position:absolute; z-index:2; top:50%; width:48px; height:48px; border:none; border-radius:50%; margin:0; padding:0; outline:none; -webkit-appearance:none; cursor:pointer; background:transparent; transform:translateY(-50%); opacity:1}
 .landtv-products-content .swiper-button-prev::after,
@@ -220,7 +222,10 @@
 
 @media (max-width:1219px) {
     .landtv-products {margin:40px 0 0 0}
+    .landtv-products-content {padding:0 39px}
     .landtv-products-list-item {min-width:100%; max-width:100%; padding:0}
+    .landtv-products-list-item-title {margin:0}
+    .landtv-products-list-item-detail span {min-width:100%}
     .landtv-products-content .swiper-button-prev,
     .landtv-products-content .swiper-button-next {width:30px; height:30px}
     .landtv-products-content .swiper-button-prev svg,
